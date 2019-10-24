@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -17,123 +18,119 @@
             </ul>
         </nav>
     </header>
-</body>
-
+    <div style="clear: both;"></div>
+    <main>
+    <h2>Sign up</h2>
     <form action="https://www.google.rs/">
         <div>
-    
-    <label for="first name">first name</label>
-    <input type="text">
+    <label for="firstName"></label>
+    <input type="text" class="firstName" placeholder="First name" name="firstName" >
         </div>
     <div>
     
-    <label for="last name">last name</label>
-    <input type="text">
+    <label for="lastName"></label>
+    <input type="text" class="lastName" placeholder="Last name" name="lastName" >
         </div>
         <div>
     
-    <label for="user name">user name</label>
-    <input type="text">
+    <label for="userName"></label>
+    <input type="text" class="userName" placeholder="User name" name="userName" >
         </div>
         <div>
     
-    <label for="email" >email</label>
-        <input type="email" placeholder="email">
+    <label for="email" ></label>
+        <input type="email" class="email" placeholder="Email" name="email" >
         </div>
         <div>
     
-<label for="password">password</label>
-        <input type="password">
+<label for="password"></label>
+        <input type="password" id="password" placeholder="Password" name="password">
         </div>   
         
-<label for="confirm pass">confirm pass</label>
-<input type="password">
+<label for="confirmPass"></label>
+<input type="password" id="confirmPass" name="confirmPass" placeholder="Confirm Password">
 </div> 
+<div>
+        <input type="submit" name="register" id="register" >
+    </div>
     </form>
 
-<div>
-    <button type="button" onclick="register">register</button>
-</div>
-<article>
-        <table>
-                <caption>Automobili</caption>
-                <thead>
-                    <tr>
-                        <th>redni broj</th>
-                    
-                   
-                         <th>model</th>
-                    
-                        <th>marka</th>
-                            
-                        <th>kubikaza</th>
-
-                        <th>god proizv</th>
-                        </tr>
-                <tr>
-                    <td>1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                                    
-                </thead>
-
-            </table>
-    
-<form action="https://www.google.rs/">
-    <div>
-            <label for="user name">user name</label>
-            <input type="text">
-
-    </div>
-
-<div>
-    <label for="password">password</label>
-    <input type="password">
-
-</div>
-
-<div>
-    <button type="button" onclick="submit">login</button>
-    
-</div>
-</form>
-
-</article>
 
 
+        <article>
+                <table>
+                    <caption>Automobili</caption>
+                        <thead>
+                            <tr>
+                                <th>redni broj</th>
+                                <th>model</th>
+                                <th>marka</th>
+                                <th>kubikaza</th>
+                                <th>god proizv</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Clio</td>
+                                <td>Renault</td>
+                                <td>1.6</td>
+                                <td>2001</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>208</td>
+                                <td>Peugeot</td>
+                                <td>1.1</td>
+                                <td>2002</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Scoda</td>
+                                <td>Octavia</td>
+                                <td>1.6</td>
+                                <td>2003</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Astra</td>
+                                <td>Opel</td>
+                                <td>1.2</td>
+                                <td>2004</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>206</td>
+                                <td>Peugeot</td>
+                                <td>1.3</td>
+                                <td>2005</td>
+                            </tr>
+                        </thead>
+        
+                    </table>
+        </article>
 
+        <aside>
+            <h2>Log in</h2>
+            <div id="loginForma">
+                <form action="https://www.google.rs/">
+                <div>
+                    <label for="userName"></label>
+                    <input type="text" name="userName" placeholder="User name">
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <input type="submit" name="logIn" id="login" >
+                </div>
+                </form>
+            </div>
+        </aside>
+        
+</main>
 
-
-
+<footer>
+    &copy;<b>Jelena Andjelkovic</b> 
+</footer>
+</body>
 </html>
