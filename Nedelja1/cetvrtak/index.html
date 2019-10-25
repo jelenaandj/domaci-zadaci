@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>vezba cetvtak</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Hello</h1>
         <nav>
+            <h1>Hello</h1>
+
             <ul>
                 <li>item 1</li>
                 <li>item 2</li>
@@ -18,119 +21,120 @@
             </ul>
         </nav>
     </header>
-    <div style="clear: both;"></div>
+
     <main>
-    <h2>Sign up</h2>
-    <form action="https://www.google.rs/">
-        <div>
-    <label for="firstName"></label>
-    <input type="text" class="firstName" placeholder="First name" name="firstName" >
+        <div id="br1">
+            <h2>Sign up</h2>
+            <form action="https://www.google.rs/">
+                <div>
+                    <label for="firstName"></label>
+                    <input type="text" class="firstName" placeholder="First name" name="firstName">
+                </div>
+                <div>
+
+                    <label for="lastName"></label>
+                    <input type="text" class="lastName" placeholder="Last name" name="lastName">
+                </div>
+                <div>
+
+                    <label for="userName"></label>
+                    <input type="text" class="userName" placeholder="User name" name="userName">
+                </div>
+                <div>
+
+                    <label for="email"></label>
+                    <input type="email" class="email" placeholder="Email" name="email">
+                </div>
+                <div>
+
+                    <label for="password"></label>
+                    <input type="password" id="password" placeholder="Password" name="password">
+                </div>
+                <div>
+                    <label for="confirmPass"></label>
+                    <input type="password" id="confirmPass" name="confirmPass" placeholder="Confirm Password">
+                </div>
+                <div>
+                    <input type="submit" name="register" id="register">
+                </div>
+            </form>
         </div>
-    <div>
-    
-    <label for="lastName"></label>
-    <input type="text" class="lastName" placeholder="Last name" name="lastName" >
-        </div>
-        <div>
-    
-    <label for="userName"></label>
-    <input type="text" class="userName" placeholder="User name" name="userName" >
-        </div>
-        <div>
-    
-    <label for="email" ></label>
-        <input type="email" class="email" placeholder="Email" name="email" >
-        </div>
-        <div>
-    
-<label for="password"></label>
-        <input type="password" id="password" placeholder="Password" name="password">
-        </div>   
-        
-<label for="confirmPass"></label>
-<input type="password" id="confirmPass" name="confirmPass" placeholder="Confirm Password">
-</div> 
-<div>
-        <input type="submit" name="register" id="register" >
-    </div>
-    </form>
+
+        <table>
+            <caption>Automobili</caption>
+            <thead>
+                <tr>
+                    <th>redni broj</th>
+                    <th>model</th>
+                    <th>marka</th>
+                    <th>kubikaza</th>
+                    <th>god proizv</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Clio</td>
+                    <td>Renault</td>
+                    <td>1.6</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>208</td>
+                    <td>Peugeot</td>
+                    <td>1.1</td>
+                    <td>2002</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Scoda</td>
+                    <td>Octavia</td>
+                    <td>1.6</td>
+                    <td>2003</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Astra</td>
+                    <td>Opel</td>
+                    <td>1.2</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>206</td>
+                    <td>Peugeot</td>
+                    <td>1.3</td>
+                    <td>2005</td>
+                </tr>
+            </thead>
+
+        </table>
 
 
-
-        <article>
-                <table>
-                    <caption>Automobili</caption>
-                        <thead>
-                            <tr>
-                                <th>redni broj</th>
-                                <th>model</th>
-                                <th>marka</th>
-                                <th>kubikaza</th>
-                                <th>god proizv</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>Clio</td>
-                                <td>Renault</td>
-                                <td>1.6</td>
-                                <td>2001</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>208</td>
-                                <td>Peugeot</td>
-                                <td>1.1</td>
-                                <td>2002</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Scoda</td>
-                                <td>Octavia</td>
-                                <td>1.6</td>
-                                <td>2003</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Astra</td>
-                                <td>Opel</td>
-                                <td>1.2</td>
-                                <td>2004</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>206</td>
-                                <td>Peugeot</td>
-                                <td>1.3</td>
-                                <td>2005</td>
-                            </tr>
-                        </thead>
-        
-                    </table>
-        </article>
 
         <aside>
             <h2>Log in</h2>
             <div id="loginForma">
                 <form action="https://www.google.rs/">
-                <div>
-                    <label for="userName"></label>
-                    <input type="text" name="userName" placeholder="User name">
-                </div>
-                <div>
-                    <label for="password"></label>
-                    <input type="password" name="password" placeholder="Password">
-                </div>
-                <div>
-                    <input type="submit" name="logIn" id="login" >
-                </div>
+                    <div>
+                        <label for="userName"></label>
+                        <input type="text" name="userName" placeholder="User name">
+                    </div>
+                    <div>
+                        <label for="password"></label>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <input type="submit" name="logIn" id="login">
+                    </div>
                 </form>
             </div>
         </aside>
-        
-</main>
 
-<footer>
-    &copy;<b>Jelena Andjelkovic</b> 
-</footer>
+    </main>
+
+    <footer>
+        &copy;<b>Jelena Andjelkovic</b>
+    </footer>
 </body>
+
 </html>
