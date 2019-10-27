@@ -1,98 +1,169 @@
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-    }
-    
-    header {
-        background-image: url("source/science.png");
-        display: block;
-        overflow: auto;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10px;
-        overflow: hidden;
-        background-color: #842B27;
-        position: fixed;
-        width: 100%;
-        top: -10px;
-    }
-    
-    nav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        text-decoration: none;
-        float: left;
-    }
-    
-    a:hover {
-        background-color: #FF7665;
-    }
-    
-    #imgjelena {
-        display: block;
-        margin: auto;
-        margin-top: 70px;
-        width: 200px;
-        height: auto;
-        border-radius: 50%;
-        border: #842B27 10px solid;
-    }
-    
-    p {
-        text-align: center;
-        font-size: 30px;
-        color: white;
-        background-color: #842B27;
-        position: absolute;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
-    }
-    
-    .navbutt1,
-    .navbutt2 {
-        display: block;
-        text-decoration: none;
-        font-size: 20px;
-        width: 200px;
-        padding: 20px;
-        list-style-type: none;
-        margin: 10px;
-        background-color: #842B27;
-        color: darkgray;
-        outline: none;
-    }
-    
-    .navbutt1 {
-        float: left;
-    }
-    
-    .navbutt2 {
-        float: right;
-    }
-    
-    .navbutt1:hover {
-        background-color: #FF7665;
-    }
-    
-    .navbutt2:hover {
-        background-color: #FF7665;
-    }
-    
-    .projectimg {
-        width: 23%;
-        height: auto;
-    }
-    
-    #projects,
-    div {
-        display: inline;
-        margin: 30px;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        
+        header {
+            background-image: url("source/science.png");
+            display: block;
+            overflow: auto;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 10px;
+            overflow: hidden;
+            background-color: #842B27;
+            position: fixed;
+            width: 100%;
+            top: -10px;
+        }
+        
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            float: left;
+        }
+        
+        a:hover {
+            background-color: #FF7665;
+        }
+        
+        #imgjelena {
+            display: block;
+            margin: auto;
+            margin-top: 70px;
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            border: #842B27 10px solid;
+        }
+        
+        .j {
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            background-color: #842B27;
+            position: absolute;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        .navbutt1,
+        .navbutt2 {
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+            width: 200px;
+            padding: 20px;
+            list-style-type: none;
+            margin: 10px;
+            background-color: #842B27;
+            color: white;
+            outline: none;
+        }
+        
+        .navbutt1 {
+            float: left;
+        }
+        
+        .navbutt2 {
+            float: right;
+        }
+        
+        .navbutt1:hover {
+            background-color: #FF7665;
+        }
+        
+        .navbutt2:hover {
+            background-color: #FF7665;
+        }
+        /* ...................................... */
+        
+        h1 {
+            display: block;
+            margin-left: 50px;
+            font-size: 35px;
+            font-weight: 500;
+        }
+        
+        #education {
+            display: block;
+            border: 5px solid #FF7665;
+            margin-top: 100px;
+        }
+        
+        #education:hover {
+            background-color: rgb(238, 238, 238);
+        }
+        
+        #education ul li {
+            display: block;
+            margin: 10px;
+            padding: 10px;
+        }
+        /* ...................................... */
+        
+        table,
+        th,
+        td {
+            margin: 30px;
+            border: solid 5px #FF7665;
+            padding: 20px;
+        }
+        
+        table:hover {
+            background-color: rgb(238, 238, 238);
+        }
+        /* ...................................... */
+        
+        .projectimg {
+            width: 27%;
+            height: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .projectimg:hover {
+            filter: blur(2px);
+        }
+        
+        #projects,
+        div {
+            display: inline;
+            margin: 30px;
+        }
+        /* ...................................... */
+        
+        #contact,
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            color: black;
+            padding: 10px;
+            float: left;
+            margin-right: 250px;
+        }
+        
+        #contact {
+            display: block;
+            border: solid 5px #FF7665;
+        }
+        
+        #contact:hover {
+            background-color: rgb(238, 238, 238);
+        }
+        
+        .social {
+            width: 70px;
+            height: auto;
+            float: right;
+            padding: 20px;
+        }
