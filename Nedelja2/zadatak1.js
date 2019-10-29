@@ -20,3 +20,22 @@ console.log(ostatak);
 
 var stepen = Math.pow(a, b);
 console.log(stepen);
+
+// zadatak 3
+var br = 3;
+
+if (br % 3 == 0) {
+    console.log(`broj ${br} je deljiv sa 3`);
+
+} else {
+    console.log(`broj ${br} nije deljiv sa 3`)
+}
+
+//zadatak 4
+
+var i = 0;
+for (i = 1; i <= 1000; i++) {
+    if (i % 5 == 0) {
+        console.log(i);
+    }
+}
