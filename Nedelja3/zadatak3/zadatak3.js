@@ -1,7 +1,7 @@
 let orderButtons = document.getElementsByClassName('btn-order');
 console.log(orderButtons);
 var orderCount = document.getElementById('counter');
-var count = 1;
+var count = 0;
 
 for (let button of orderButtons) {
     button.addEventListener('click', function() { orderButtonsCount(button); });
@@ -9,8 +9,7 @@ for (let button of orderButtons) {
 
 
 function orderButtonsCount(element) {
-    console.log(element);
-    orderCount.innerHTML = count++;
+    orderCount.innerHTML = ++count;
 }
 
 ////...................................
@@ -24,8 +23,8 @@ for (let button of orderButtonsNow) {
 
 function resetTozero() {
     let time = new Date();
-    if (count > 1) {
-        alert(`Narucili ste ${count-1} pizza. ${dateToday(time)}`);
+    if (count > 0) {
+        alert(`Narucili ste ${count} pizza. ${dateToday(time)}`);
         count = 0;
         orderCount.innerHTML = 0;
     } else {
