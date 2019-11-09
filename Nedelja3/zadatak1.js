@@ -3,7 +3,7 @@ function max(a, b, c) {
     var veciBroj = broj > c ? broj : c;
     return veciBroj;
 }
-console.log(`najveci broj je ${max(1, 3, 6)}`);
+console.log(`najveci broj je ${max(1, 3, 3)}`);
 
 
 

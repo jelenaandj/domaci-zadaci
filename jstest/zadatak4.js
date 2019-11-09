@@ -12,17 +12,11 @@
 // let year = time.getFullYear();
 // console.log(year);
 
-let month = 4;
+let month = 2;
 let numbofdays = 1;
 let isLeap = false;
 
 
-
-/*if (year % 4 == 0) {
-    console.log(`${year} is a leap year`);
-} else {
-    console.log(`${year} is not a leap year`)
-}*/
 
 switch (month + 1) {
     case 1:
