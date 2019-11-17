@@ -29,9 +29,7 @@ let recept5 = {
     sastojci: ['1 pile', '1 kg krompira', '1 dl ulja', '1 šargarepa', '1 paradajz', '2 glavice crnog luka', '1 paprika'],
 }
 
-// mafini.sastojci.forEach(element => {
-//     console.log(element);
-// });
+
 
 function ispisiRecept(recept) {
     return `${recept.imeRecepta}:\n${recept.tezinaRecepta}\n${recept.sastojci}`
@@ -44,7 +42,7 @@ console.log(ispisiRecept(recept4));
 console.log(ispisiRecept(recept5));
 
 
-/////////2
+///////// zadatak2
 
 let svirecepti = [recept1, recept2, recept3, recept4, recept5];
 
@@ -53,9 +51,3 @@ svirecepti.forEach(recept => {
         console.log(`${recept.imeRecepta}:\n<Laki || Pocetni>\n${recept.sastojci}`);
     }
 });
-
-// function jbt(){
-// for (let recept of recept) {
-//     if (recept.tezinaRecepta == 'laki' || 'pocetni') {
-//         return `${recept.imeRecepta}:\n<Laki || Pocetni>\n${recept.sastojci}`
-//     }}

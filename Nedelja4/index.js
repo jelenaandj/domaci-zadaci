@@ -60,9 +60,14 @@ function addItem() {
     chkDone.value = 'done';
     chkDone.addEventListener('change', handleCheckChange);
 
+    let ulistaValue = document.createElement('p');
+    ulistaValue.innerHTML = document.querySelector('#urgentnost').value;
+    ulistaValue.className = 'task-ulista';
+
     checkContainer.appendChild(removeBtn);
     checkContainer.appendChild(chkDone);
 
+    itemContainer.appendChild(ulistaValue);
     itemContainer.appendChild(itemText);
     itemContainer.appendChild(checkContainer);
     taskListContainer.appendChild(itemContainer);
@@ -93,9 +98,11 @@ function handleCheckChange(e) {
 
     if (chkBox.checked) {
         itemContainer.children[0].style.textDecoration = 'line-through';
+        itemContainer.children[1].style.textDecoration = 'line-through';
         selectedChildren.push(itemContainer);
     } else {
         itemContainer.children[0].style.textDecoration = 'none';
+        itemContainer.children[1].style.textDecoration = 'none';
         for (let i = 0; i < selectedChildren.length; i++) {
             if (itemContainer === selectedChildren[i]) {
                 delete selectedChildren[i];

@@ -30,8 +30,14 @@ div {
 .task-title {
     display: inline-block;
     margin-right: 5px;
-    width: 80%;
+    width: 60%;
     text-align: center;
+}
+
+.task-ulista {
+    display: inline-block;
+    margin-right: 5px;
+    width: 20%;
 }
 
 .task-check {
