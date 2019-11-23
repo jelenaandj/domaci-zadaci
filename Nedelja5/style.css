@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: rgb(166, 183, 194);
+    background: radial-gradient(circle, rgba(166, 183, 194, 1) 0%, rgba(145, 157, 171, 0.7458333675266982) 73%);
+    height: 350px;
+    /* margin: 10px auto; */
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    padding-top: 30px;
+    color: white;
+    font-weight: 200;
+}
+
+#total {
+    text-align: center;
+    margin: 30px;
+    font-weight: 200;
+    font-size: 40px;
+    color: white;
+}
+
+#prihod {
+    background-color: rgb(15, 148, 153);
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#prihod,
+label {
+    padding-left: 10px;
+}
+
+#rashod,
+label {
+    padding-left: 10px;
+}
+
+#totalPrihod {
+    background-color: rgb(15, 148, 153);
+    text-align: right;
+    display: inline-block;
+    margin-left: 300px;
+}
+
+#rashod {
+    background-color: red;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#totalRashod {
+    background-color: red;
+    text-align: right;
+    display: inline-block;
+    margin-left: 300px;
+}
+
+#opisLista {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: rgb(228, 232, 235);
+    border-bottom: 2px solid rgb(197, 205, 211);
+    padding-left: 20px;
+    text-align: center;
+}
+
+#lista {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#prihodiIrashodi {
+    margin: 20px;
+}
+
+#ispisPrihoda {
+    display: inline-block;
+    width: 30%;
+    font-size: 20px;
+    color: rgb(15, 148, 153);
+    vertical-align: top;
+    padding: 10px;
+    margin-left: 170px;
+}
+
+#ispisRashoda {
+    display: inline-block;
+    width: 30%;
+    font-size: 20px;
+    color: red;
+    vertical-align: top;
+}
+
+.divZaispis {
+    display: block;
+}
+
+.procenatZaRashode {
+    display: inline-block;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0%;
+    background-color: rgb(223, 155, 155);
+}
+
+.dugme-za-brisanje {
+    display: none;
+    float: right;
+}
+
+.divZaispis:hover button {
+    display: block;
+}
