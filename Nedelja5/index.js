@@ -17,12 +17,13 @@ dugme.addEventListener('click', function() {
         ispis('#ispisPrihoda', divv);
         totalPrihod.innerHTML = sumaPrihoda;
 
-        document.querySelector('#procenat').innerHTML = Math.round(sumaRashoda * 100 / sumaPrihoda) / 100;
+        updateHeaderProcenat();
     } else if (listaOpis.value == 'rashod' && totalPrihod.innerHTML > 0) {
         sumaRashoda += parseInt(iznosOpis.value);
         ispis('#ispisRashoda', divv);
         totalRashod.innerHTML = sumaRashoda;
-        document.querySelector('#procenat').innerHTML = Math.round(sumaRashoda * 100 / sumaPrihoda) / 100;
+
+        updateHeaderProcenat();
     } else { alert('Greska'); }
     return;
 });
@@ -50,8 +51,8 @@ function ispis(divZaIspis, divv) {
             sumaRashoda -= divv.children[1].innerHTML;
             totalRashod.innerHTML = sumaRashoda;
         }
+        updateHeaderProcenat();
 
-        document.querySelector('#procenat').innerHTML = Math.round(sumaRashoda * 100 / sumaPrihoda) / 100;
         let totalRezultat = document.querySelector('#total');
         totalRezultat.innerHTML = sumaPrihoda - sumaRashoda;
         updateProcenat();
@@ -73,7 +74,6 @@ function ispis(divZaIspis, divv) {
 
     let totalRezultat = document.querySelector('#total');
     totalRezultat.innerHTML = sumaPrihoda - sumaRashoda;
-
     return;
 }
 
@@ -81,12 +81,18 @@ function updateProcenat() {
     let inputs = document.querySelectorAll('.procenatZaRashode');
     if (inputs.length > 0) {
         inputs.forEach(element => {
-            if (element != 'undefined' && element != null) {
+            if (element != 'undefined' && element != null && sumaPrihoda > 0) {
                 element.innerHTML = Math.round(element.previousElementSibling.innerHTML * 100 / sumaPrihoda) / 100;
+            } else {
+                element.innerHTML = 0;
             }
         });
     }
-    return;
+}
+
+function updateHeaderProcenat() {
+    let vrednost = Math.round(sumaRashoda * 100 / sumaPrihoda) / 100;
+    document.querySelector('#procenat').innerHTML = isFinite(vrednost) && vrednost != null ? vrednost : 0;
 }
 
 let a = new Date;
