@@ -1,11 +1,11 @@
 // Зашто користимо JSON?
 
-//da bi nasa web app komuncirala sa serverom
+//da bi nasa web app komuncirala sa serverom, i server sa app
 
 // Зашто су модули корисни? +Пример
 
 //da bi jasno odvojili funkcionalnosti aplikacije tj module, view i service (MVC) i mogli da koristimo stare i ubacujemo nove elemente i module.
-//na primeru sa itBootPizza mozemo dodavati pizze i menjati informacije na samo jednom mestu. 
+//na primeru sa itBootPizza mozemo dodavati pizze i menjati informacije na samo jednom mestu. takodje resursi se ucitavaju samo jednom i zbog toga cela app ucitava brze
 
 
 // Шта је ECMAScript?
@@ -16,7 +16,7 @@
 // Опишите како функционишу HTTP захтеви и шта је то REST API.
 
 //web app salje zahtev za nekim resursom serveru i 
-//onda server preko svojih end pontova prikuplja i salje nazad korisniku.
+//onda server preko svojih end pointova prikuplja i salje nazad korisniku.
 // REST je arhitektonski obrazac za dizajn api-ja. koristi http zahteve GET POST PUT DELETE
 
 
