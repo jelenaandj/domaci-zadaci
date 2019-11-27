@@ -16,7 +16,12 @@ document.querySelector('#btn-add').addEventListener('click', function() {
     let companyDateValue = companyDate.value;
     let companyValueVal = companyValue.value;
 
-    if (companyNameValue.trim() == '' || companyPIBValue == '' || companyPIBValue.length > 8 || companyPIBValue.length < 8 || companyDateValue == '' || companyValueVal == isNaN(companyValueVal)) { alert('greska'); return; }
+    if (companyNameValue.trim() == '' || companyPIBValue == '' ||
+        companyPIBValue.length > 8 || companyPIBValue.length < 8 ||
+        companyDateValue == '' || companyValueVal == isNaN(companyValueVal)) {
+        alert('greska');
+        return;
+    }
 
     let companyNameContainer = document.createElement('p');
     companyNameContainer.className = 'sveFakture';
