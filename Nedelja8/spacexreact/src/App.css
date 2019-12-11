@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+body{
+  background-image: url("C:\Users\Jelena\Desktop\spacexreact\spacexreact\src\milky_way.png");
+  /* background-image: url("../../media/examples/lizard.png"); */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+img{
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: 20%;
+  
+}
+label{
+  padding: 20px;
+  margin:auto;
+  font-size: 18px;
+  color: white;
+
+}
+.info{
+  margin: 20px;
+  font-size: 20px;
+ 
+  overflow: hidden;
+}
+.div{
+  position: sticky;
+  left: 0; top: 0;
+  background: rgb(166,183,194);
+  background: radial-gradient(circle, rgba(166,183,194,1) 0%, rgba(162,190,224,1) 31%, rgba(160,192,235,0.6169818269104517) 100%);
+}
+.launchlist{
+  border: 3px solid gray;
+}
+.launch{
+  border: 3px solid gray;
+  margin: 10px;
+  background: radial-gradient(circle, rgba(166,183,194,1) 0%, rgba(162,190,224,0.40689779329700626) 31%, rgba(160,192,235,0.6169818269104517) 100%);
+  
+}
+.footer{
+  background: rgb(166,183,194);
+  background: radial-gradient(circle, rgba(166,183,194,1) 0%, rgba(162,190,224,1) 31%, rgba(160,192,235,0.6169818269104517) 100%);
+}
+a{
+  color: white;
+  font-size: 20px;
+}
